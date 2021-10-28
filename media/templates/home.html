@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloudinary</title>
+</head>
+<body>
+
+    <h2>Cloudniary Images</h2>
+
+    <div>
+
+        {% for picture in pictures %}
+        <div>
+            <strong>{{ picture.name }}</strong>
+        </div>
+        <img src="{{ picture.image.url }} " width="300px" >
+
+        {% endfor %}
+
+    </div>
+
+
+</body>
+</html>
